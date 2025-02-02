@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDo List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <h1>test</h1>
+    <div class="container">
+        <header>
+            <h1>ToDo List App</h1>
+        </header>
+        <main>
+            <aside>
+                <h2>Projects</h2>
+                <form id="projectForm">
+                    <input type="text" id="projectName" placeholder="New project" required>
+                    <button type="submit"><i class="fas fa-plus"></i></button>
+                </form>
+                <div id="projectContainer"></div>
+            </aside>
+            <section>
+                <h2>ToDos</h2>
+                <form id="todoForm">
+                    <input type="text" id="todoTitle" placeholder="Title" required>
+                    <input type="text" id="todoDescription" placeholder="Description" required>
+                    <input type="date" id="todoDueDate" required>
+                    <select id="todoPriority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <button type="submit"><i class="fas fa-plus"></i></button>
+                </form>
+                <div id="todoContainer"></div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
